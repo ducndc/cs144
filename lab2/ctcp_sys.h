@@ -54,6 +54,7 @@ typedef struct ctcp_segment {
                             does not include this field */
 } ctcp_segment_t;
 
+#define CTCP_SEGMENT_SIZE sizeof(ctcp_segment_t)
 
 /**
  * Call on this to read input locally to be put into segments that will be sent

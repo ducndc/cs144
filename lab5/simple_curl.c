@@ -96,6 +96,7 @@ int main(int argc, char *argv[]) {
     while (1) {
       time_t curr_time = time(NULL);
       int diff = difftime(curr_time, last_time);
+
       if (diff >= 5)
         break;
 

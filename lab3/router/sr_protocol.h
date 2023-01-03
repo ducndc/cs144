@@ -76,7 +76,6 @@
 #endif
 #define ICMP_DATA_SIZE 28
 
-
 /* Structure of a ICMP header
  */
 struct sr_icmp_hdr {
@@ -86,7 +85,6 @@ struct sr_icmp_hdr {
   
 } __attribute__ ((packed)) ;
 typedef struct sr_icmp_hdr sr_icmp_hdr_t;
-
 
 /* Structure of a type3 ICMP header
  */
@@ -100,9 +98,6 @@ struct sr_icmp_t3_hdr {
 
 } __attribute__ ((packed)) ;
 typedef struct sr_icmp_t3_hdr sr_icmp_t3_hdr_t;
-
-
-
 
 /*
  * Structure of an internet header, naked of options.
@@ -148,17 +143,15 @@ struct sr_ethernet_hdr
 } __attribute__ ((packed)) ;
 typedef struct sr_ethernet_hdr sr_ethernet_hdr_t;
 
-
-
 enum sr_ip_protocol {
   ip_protocol_icmp = 0x0001,
+  ip_protocol_arp = 0x0800,
 };
 
 enum sr_ethertype {
   ethertype_arp = 0x0806,
   ethertype_ip = 0x0800,
 };
-
 
 enum sr_arp_opcode {
   arp_op_request = 0x0001,
@@ -168,7 +161,6 @@ enum sr_arp_opcode {
 enum sr_arp_hrd_fmt {
   arp_hrd_ethernet = 0x0001,
 };
-
 
 struct sr_arp_hdr
 {
@@ -185,5 +177,30 @@ struct sr_arp_hdr
 typedef struct sr_arp_hdr sr_arp_hdr_t;
 
 #define sr_IFACE_NAMELEN 32
+
+#define ETHERNET_HDR_SIZE sizeof(sr_ethernet_hdr_t)
+#define IP_HDR_SIZE       sizeof(sr_ip_hdr_t)
+#define ICMP_HDR_SIZE     sizeof(sr_icmp_hdr_t)
+#define ICMP_T3_HDR_SIZE  sizeof(sr_icmp_t3_hdr_t)
+#define ARP_HDR_SIZE      sizeof(sr_arp_hdr_t)
+
+#define ARP_HRD             1
+#define ARP_PLN             4
+#define ARP_HLN             6
+#define REPLY_ARP_OPCODE    2
+#define REQUEST_ARP_OPCODE  1
+
+#define ECHO_REPLY_TYPE     0
+#define ECHO_TYPE           8
+#define DST_NET_UN_TYPE     3
+#define DST_NET_UN_CODE     0
+#define DST_HOST_UN_TYPE    3
+#define DST_HOST_UN_CODE    1
+#define PORT_UN_TYPE        3
+#define PORT_UN_CODE        3
+#define TIME_EXC_TYPE       11
+#define TIME_EXC_CODE       0
+
+#define MAX_TTL             64
 
 #endif /* -- SR_PROTOCOL_H -- */

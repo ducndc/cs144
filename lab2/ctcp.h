@@ -38,6 +38,8 @@
 #define ACK ntohl(TH_ACK)
 #define FIN ntohl(TH_FIN)
 
+#define MAX_RETRANSMIT 6
+#define MAX_SEG_LIFETIME_MS 300
 
 /**
  * cTCP configuration struct.
@@ -67,6 +69,7 @@ typedef struct {
 struct ctcp_state;
 typedef struct ctcp_state ctcp_state_t;
 
+#define CTCP_STATE_SIZE sizeof(ctcp_state_t)
 
 ////////////////////////////////// YOUR CODE //////////////////////////////////
 

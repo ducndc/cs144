@@ -1,0 +1,373 @@
+$(DEPS	Makefile	/^$(DEPS): .%.d : %.c$/
+$(OBJS	Makefile	/^$(OBJS): %.o : %.c$/
+.PHONY	Makefile	/^.PHONY: all clean submit$/
+ACK	ctcp.h	38
+ADDR_FORMAT_STR	ctcp_sys_internal.h	409
+ASSERT_CLIENT_ONLY	ctcp_sys_internal.c	23
+ASSERT_CONN	ctcp_sys_internal.c	25
+ASSERT_SERVER_ONLY	ctcp_sys_internal.c	24
+CC	Makefile	/^CC = gcc$/
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -Werror -pthread$/
+CHILD_READ_FD	ctcp_sys_internal.h	61
+CHILD_WRITE_FD	ctcp_sys_internal.h	62
+CONN_TIMEOUT	ctcp_sys_internal.h	45
+CTCP_H	ctcp.h	11
+CTCP_LINKED_LIST_H	ctcp_linked_list.h	9
+CTCP_SEGMENT	tester-student.py	/^class CTCP_SEGMENT(Structure):$/
+CTCP_SEGMENT_SIZE	ctcp_sys.h	57
+CTCP_STATE_SIZE	ctcp.h	72
+CTCP_SYS_H	ctcp_sys.h	13
+CTCP_SYS_INTERNAL_H	ctcp_sys_internal.h	10
+CTCP_UTILS_H	ctcp_utils.h	10
+DEBUG	ctcp_sys_internal.c	27
+DEBUG_TEARDOWN	ctcp_sys_internal.h	416
+DEFAULT_PORT	ctcp_sys_internal.h	16
+DEFAULT_TTL	ctcp_sys_internal.h	17
+DEPS	Makefile	/^DEPS = $(patsubst %.c,.%.d,$(SRCS))$/
+ETH_INTERFACE	ctcp_sys_internal.h	266
+FIN	ctcp.h	39
+FIN_WAIT_start_time	ctcp_lab2.c	65
+FULL_HDR_SIZE	ctcp_sys_internal.h	145
+HDRS	Makefile	/^HDRS = ctcp_linked_list.h ctcp_utils.h ctcp.h ctcp/
+IP_HDR_SIZE	ctcp_sys_internal.h	143
+IP_ID	ctcp_sys_internal.h	19
+LOCALHOST	ctcp_sys_internal.h	22
+LOCALHOST_STR	ctcp_sys_internal.h	410
+LOG_ENTRY_SIZE	ctcp_sys_internal.h	408
+LOG_HEADERS	ctcp_sys_internal.h	413
+LOG_SIZE	ctcp_sys_internal.h	407
+MAX_BUF_SPACE	ctcp_sys_internal.h	65
+MAX_NUM_CLIENTS	ctcp_sys_internal.h	25
+MAX_PACKET_SIZE	ctcp_sys_internal.h	148
+MAX_RETRANSMIT	ctcp.h	41
+MAX_SEG_DATA_SIZE	ctcp.h	29
+MAX_SEG_DATA_SIZE	README	45
+MAX_SEG_LIFETIME_MS	ctcp.h	42
+Mctcp_sys_internal	ctcp_sys_internal.c	/^int main(int argc , char *argv[]) {$/
+Mtest	test.c	/^int main() {$/
+NUM_POLL	ctcp_sys_internal.h	28
+OBJS	Makefile	/^OBJS = $(patsubst %.c,%.o,$(SRCS))$/
+PARENT_READ_FD	ctcp_sys_internal.h	57
+PARENT_READ_PIPE	ctcp_sys_internal.h	51
+PARENT_WRITE_FD	ctcp_sys_internal.h	58
+PARENT_WRITE_PIPE	ctcp_sys_internal.h	50
+POLL_INTERVAL	ctcp_sys_internal.h	31
+READ_FD	ctcp_sys_internal.h	53
+RESET_THREAD_DURATION	ctcp_sys_internal.h	34
+RT_INTERVAL	ctcp_sys_internal.h	39
+SALT	ctcp_sys_internal.h	138
+SERVER	ctcp_sys_internal.c	28
+SRCS	Makefile	/^SRCS = ctcp_linked_list.c ctcp_utils.c ctcp_lab1.c/
+SUBMISSION_SITE	Makefile	/^SUBMISSION_SITE = https:\/\/web.stanford.edu\/class\/c/
+SYN	ctcp.h	37
+Segment	tester-student.py	/^class Segment:$/
+TAR	Makefile	/^TAR = ctcp.tar.gz$/
+TCP_HDR_SIZE	ctcp_sys_internal.h	144
+TCP_MAX_PORT	ctcp_sys_internal.h	18
+TCP_PSEUDOHDR_SIZE	ctcp_sys_internal.h	161
+TIMER_INTERVAL	ctcp_sys_internal.h	42
+TimeoutError	tester-student.py	/^class TimeoutError(Exception):$/
+WRITE_FD	ctcp_sys_internal.h	54
+__enter__	tester-student.py	/^  def __enter__(self):$/
+__exit__	tester-student.py	/^  def __exit__(self, type, value, traceback):$/
+__init__	tester-student.py	/^  def __init__(self, msg):$/
+__init__	tester-student.py	/^  def __init__(self, seconds=1, error_message='Tim/
+__repr__	tester-student.py	/^  def __repr__(self):$/
+ackno	ctcp.c	48
+ackno	ctcp_lab1.c	49
+ackno	ctcp_sys.h	47
+ackno	ctcp_sys_internal.h	281
+ackno_checker	ctcp.c	50
+ackno_checker	ctcp_lab1.c	51
+add_network_line_ending	ctcp_sys_internal.h	/^bool add_network_line_ending(bool webserver, char /
+all	Makefile	/^all: ctcp$/
+argc	ctcp_sys_internal.c	45
+argv	ctcp_sys_internal.c	46
+async	ctcp_sys_internal.h	/^int async(int fd) {$/
+bidirectional	tester-student.py	/^def bidirectional():$/
+buf	ctcp_sys_internal.h	75
+build	README	12
+choose_ports	tester-student.py	/^def choose_ports(min_port=1025, max_port=65535):$/
+chunk	ctcp_sys_internal.h	71
+chunk_t	ctcp_sys_internal.h	77
+cksum	ctcp_sys.h	51
+cksum	ctcp_utils.c	/^uint16_t cksum(const void *_data, uint16_t len) {$/
+cksum_tcp	ctcp_sys_internal.h	/^uint16_t cksum_tcp(iphdr_t *packet, uint16_t len) /
+clean	Makefile	/^clean:$/
+clean	README	16
+client_receives	tester-student.py	/^def client_receives():$/
+client_sends	tester-student.py	/^def client_sends():$/
+clients	README	38
+config	ctcp_sys_internal.c	31
+config	ctcp_sys_internal.c	49
+conn	ctcp.c	31
+conn	ctcp_lab1.c	31
+conn	ctcp_lab2.c	54
+conn	ctcp_sys_internal.h	269
+conn_add	ctcp_sys_internal.c	/^void conn_add(conn_t *conn) {$/
+conn_bufspace	ctcp_sys_internal.c	/^size_t conn_bufspace(conn_t *conn) {$/
+conn_drain	ctcp_sys_internal.c	/^void conn_drain(conn_t *conn) {$/
+conn_free	ctcp_sys_internal.c	/^void conn_free(conn_t *conn) {$/
+conn_input	ctcp_sys_internal.c	/^int conn_input(conn_t *conn, void *buf, size_t len/
+conn_output	ctcp_sys_internal.c	/^int conn_output(conn_t *conn, const char *buf, siz/
+conn_remove	ctcp_sys_internal.c	/^void conn_remove(conn_t *conn) {$/
+conn_send	ctcp_sys_internal.c	/^int conn_send(conn_t *conn, ctcp_segment_t *segmen/
+conn_setup	ctcp_sys_internal.h	/^void conn_setup(conn_t *conn, in_addr_t ip_addr, i/
+conn_t	ctcp_sys.h	37
+conn_t	ctcp_sys_internal.h	298
+connection_teardown	tester-student.py	/^def connection_teardown():$/
+connections	ctcp_sys_internal.c	42
+convert_flags	tester-student.py	/^  def convert_flags(self, flags):$/
+convert_to_ctcp	ctcp_sys_internal.c	/^ctcp_segment_t *convert_to_ctcp(conn_t *src, char /
+convert_to_datagram	ctcp_sys_internal.c	/^char *convert_to_datagram(conn_t *dst, ctcp_segmen/
+correct_checksum	tester-student.py	/^def correct_checksum():$/
+correct_header_fields	tester-student.py	/^def correct_header_fields():$/
+create_datagram	ctcp_sys_internal.h	/^char *create_datagram(in_addr_t src_ip, in_addr_t /
+create_tcp_rst	ctcp_sys_internal.c	/^char *create_tcp_rst(in_addr_t ip_dst, uint16_t po/
+create_tcp_seg	ctcp_sys_internal.c	/^char *create_tcp_seg(conn_t *dst, uint8_t flags, c/
+ctcp	Makefile	/^ctcp: $(OBJS)$/
+ctcp_cfg	ctcp_sys_internal.c	50
+ctcp_checksum	tester-student.py	/^  def ctcp_checksum(self):$/
+ctcp_clean_up_unacked_segment_list	ctcp_lab2.c	/^ctcp_clean_up_unacked_segment_list(ctcp_state_t *s/
+ctcp_config	ctcp_lab2.c	66
+ctcp_config_t	ctcp.h	58
+ctcp_destroy	ctcp.c	/^void ctcp_destroy(ctcp_state_t *state) {$/
+ctcp_destroy	ctcp_lab1.c	/^void ctcp_destroy(ctcp_state_t *state) {$/
+ctcp_destroy	ctcp_lab2.c	/^void ctcp_destroy(ctcp_state_t *state) {$/
+ctcp_get_num_data_bytes	ctcp_lab2.c	/^ctcp_get_num_data_bytes(ctcp_segment_t* ctcp_segme/
+ctcp_init	ctcp.c	/^ctcp_state_t *ctcp_init(conn_t *conn, ctcp_config_/
+ctcp_init	ctcp_lab1.c	/^ctcp_state_t *ctcp_init(conn_t *conn, ctcp_config_/
+ctcp_init	ctcp_lab2.c	/^ctcp_state_t *ctcp_init(conn_t *conn, ctcp_config_/
+ctcp_output	ctcp.c	/^void ctcp_output(ctcp_state_t *state) {$/
+ctcp_output	ctcp_lab1.c	/^void ctcp_output(ctcp_state_t *state) {$/
+ctcp_output	ctcp_lab2.c	/^void ctcp_output(ctcp_state_t *state) {$/
+ctcp_read	ctcp.c	/^void ctcp_read(ctcp_state_t *state) {$/
+ctcp_read	ctcp_lab1.c	/^void ctcp_read(ctcp_state_t *state) {$/
+ctcp_read	ctcp_lab2.c	/^void ctcp_read(ctcp_state_t *state) {$/
+ctcp_receive	ctcp.c	/^void ctcp_receive(ctcp_state_t *state, ctcp_segmen/
+ctcp_receive	ctcp_lab1.c	/^void ctcp_receive(ctcp_state_t *state, ctcp_segmen/
+ctcp_receive	ctcp_lab2.c	/^void ctcp_receive(ctcp_state_t *state, ctcp_segmen/
+ctcp_segment	ctcp_lab2.c	39
+ctcp_segment	ctcp_sys.h	45
+ctcp_segment_t	ctcp_sys.h	55
+ctcp_send	ctcp_lab2.c	/^ctcp_send(ctcp_state_t *state)$/
+ctcp_send_control_segment	ctcp_lab2.c	/^ctcp_send_control_segment(ctcp_state_t *state)$/
+ctcp_send_segment	ctcp_lab2.c	/^ctcp_send_segment(ctcp_state_t *state, wrapped_ctc/
+ctcp_state	ctcp.c	27
+ctcp_state	ctcp_lab1.c	27
+ctcp_state	ctcp_lab2.c	50
+ctcp_state_t	ctcp.h	70
+ctcp_timer	ctcp.c	/^void ctcp_timer() {$/
+ctcp_timer	ctcp_lab1.c	/^void ctcp_timer() {$/
+ctcp_timer	ctcp_lab2.c	/^void ctcp_timer() {$/
+current_seqno_received	ctcp.c	51
+current_seqno_received	ctcp_lab1.c	52
+current_time	ctcp_utils.c	/^long current_time() {$/
+data	ctcp.c	53
+data	ctcp_lab1.c	43
+data	ctcp_sys.h	52
+delete_all_connections	ctcp_sys_internal.c	/^void delete_all_connections() {$/
+delete_me	ctcp_sys_internal.h	290
+do_config	ctcp_sys_internal.c	/^int do_config(char *port) {$/
+do_config_server	ctcp_sys_internal.c	/^int do_config_server(char *server) { ASSERT_CLIENT/
+do_loop	ctcp_sys_internal.c	/^void do_loop() {$/
+dst_addr	ctcp_sys_internal.h	153
+end_client	ctcp_sys_internal.c	/^void end_client() {$/
+events	ctcp_sys_internal.c	83
+execute_program	ctcp_sys_internal.c	/^void execute_program(conn_t *conn) { ASSERT_SERVER/
+fin_sent	tester-student.py	/^def fin_sent():$/
+flags	ctcp.c	49
+flags	ctcp_lab1.c	50
+flags	ctcp_sys.h	49
+flipbit	ctcp_sys_internal.h	/^void flipbit(const void *segment, size_t bit) {$/
+format_addresses	ctcp_sys_internal.h	/^void format_addresses(in_addr_t ip_addr, int port,/
+get_connections	ctcp_sys_internal.c	/^conn_t *get_connections() {$/
+get_time	ctcp_sys_internal.h	/^void get_time(struct timespec *ts) {$/
+handle_timeout	tester-student.py	/^  def handle_timeout(self, signum, frame):$/
+handling_resets	ctcp_sys_internal.c	94
+has_same_flags	tester-student.py	/^  def has_same_flags(self, other):$/
+head	ctcp_linked_list.h	23
+hex_dump	ctcp_sys_internal.h	/^void hex_dump(unsigned char *from, char *to, int l/
+init_seqno	ctcp_sys_internal.h	276
+ip_addr	ctcp_sys_internal.c	33
+ip_addr	ctcp_sys_internal.h	270
+ip_from_hostname	ctcp_sys_internal.h	/^in_addr_t ip_from_hostname(char *hostname) {$/
+ip_from_self	ctcp_sys_internal.h	/^in_addr_t ip_from_self(void) {$/
+iphdr_t	ctcp_sys_internal.h	140
+is_EOF	ctcp_lab2.c	20
+is_FIN	ctcp_lab2.c	28
+lab5_mode	ctcp_sys.h	138
+large_data	tester-student.py	/^def large_data():$/
+larger_windows	tester-student.py	/^def larger_windows():$/
+last_ackno_rxed	ctcp_lab2.c	21
+last_seqno_accepted	ctcp_lab2.c	29
+last_seqno_read	ctcp_lab2.c	22
+last_seqno_sent	ctcp_lab2.c	23
+last_timeout	ctcp_sys_internal.c	86
+len	ctcp.c	44
+len	ctcp_lab1.c	46
+len	ctcp_sys.h	48
+length	ctcp_linked_list.h	25
+linked_list	ctcp_linked_list.h	22
+linked_list_t	ctcp_linked_list.h	27
+ll_add	ctcp_linked_list.c	/^ll_node_t *ll_add(linked_list_t *list, void *objec/
+ll_add_after	ctcp_linked_list.c	/^ll_node_t *ll_add_after(linked_list_t *list, ll_no/
+ll_add_front	ctcp_linked_list.c	/^ll_node_t *ll_add_front(linked_list_t *list, void /
+ll_back	ctcp_linked_list.c	/^ll_node_t *ll_back(linked_list_t *list) {$/
+ll_create	ctcp_linked_list.c	/^linked_list_t *ll_create() {$/
+ll_create_node	ctcp_linked_list.c	/^ll_node_t *ll_create_node(void *object) {$/
+ll_destroy	ctcp_linked_list.c	/^void ll_destroy(linked_list_t *list) {$/
+ll_find	ctcp_linked_list.c	/^ll_node_t *ll_find(linked_list_t *list, void *obje/
+ll_front	ctcp_linked_list.c	/^ll_node_t *ll_front(linked_list_t *list) {$/
+ll_length	ctcp_linked_list.c	/^unsigned int ll_length(linked_list_t *list) {$/
+ll_node	ctcp_linked_list.h	14
+ll_node_t	ctcp_linked_list.h	19
+ll_remove	ctcp_linked_list.c	/^void *ll_remove(linked_list_t *list, ll_node_t *no/
+log_file	ctcp_sys_internal.c	70
+log_segment	ctcp_sys_internal.h	/^void log_segment(int file, in_addr_t ip_addr, int /
+make_random	tester-student.py	/^def make_random(length, is_binary=False):$/
+need_timer_in	ctcp_sys_internal.h	/^long need_timer_in(const struct timespec *last, lo/
+new_connection	ctcp_sys_internal.c	74
+next	ctcp.c	28
+next	ctcp_lab1.c	28
+next	ctcp_lab2.c	51
+next	ctcp_linked_list.h	15
+next	ctcp_sys_internal.h	72
+next	ctcp_sys_internal.h	295
+next_seqno	ctcp.c	47
+next_seqno	ctcp_lab1.c	48
+next_seqno	ctcp_sys_internal.h	280
+num_connected	ctcp_sys_internal.c	89
+num_invalid_cksums	ctcp_lab2.c	32
+num_out_of_window_segments	ctcp_lab2.c	31
+num_retransmit	ctcp.c	43
+num_retransmit	ctcp_lab1.c	44
+num_truncated_segments	ctcp_lab2.c	30
+num_xmits	ctcp_lab2.c	37
+object	ctcp_linked_list.h	17
+opt_corrupt	ctcp_sys_internal.c	61
+opt_delay	ctcp_sys_internal.c	62
+opt_drop	ctcp_sys_internal.c	60
+opt_duplicate	ctcp_sys_internal.c	63
+out_queue	ctcp_sys_internal.h	292
+out_queue_tail	ctcp_sys_internal.h	293
+parse_args	tester-student.py	/^def parse_args():$/
+placeholder	ctcp_sys_internal.h	154
+poll_fd	ctcp_sys_internal.h	285
+port	ctcp_sys_internal.c	34
+port	ctcp_sys_internal.h	271
+port	README	28
+prev	ctcp.c	29
+prev	ctcp_lab1.c	29
+prev	ctcp_lab2.c	52
+prev	ctcp_linked_list.h	16
+prev	ctcp_sys_internal.h	296
+print_addr_ip	ctcp_sys_internal.h	/^void print_addr_ip(in_addr_t address) {$/
+print_addr_ip_int	ctcp_sys_internal.h	/^void print_addr_ip_int(uint32_t ip) {$/
+print_hdr_ctcp	ctcp_utils.c	/^void print_hdr_ctcp(ctcp_segment_t *segment) {$/
+print_hdr_ip	ctcp_sys_internal.h	/^void print_hdr_ip(uint8_t *buf) {$/
+print_hdr_tcp	ctcp_sys_internal.h	/^void print_hdr_tcp(uint8_t *buf) {$/
+print_hdrs	ctcp_sys_internal.h	/^void print_hdrs(void *buf, uint32_t length) {$/
+print_test_list	tester-student.py	/^def print_test_list():$/
+program	ctcp_sys_internal.c	44
+protocol	ctcp_sys_internal.h	155
+rand_percent	ctcp_sys_internal.h	/^int rand_percent(int level) {$/
+read_debug_messages_from	tester-student.py	/^def read_debug_messages_from(host):$/
+read_eof	ctcp_sys_internal.h	287
+read_from	tester-student.py	/^def read_from(host, num_lines=-1, stderr=False):$/
+read_segments_from	tester-student.py	/^def read_segments_from(host):$/
+recv_filter	ctcp_sys_internal.c	/^int recv_filter(int sockfd, void *buf, size_t len,/
+recv_window	ctcp.h	50
+rt_timeout	ctcp.c	52
+rt_timeout	ctcp.h	57
+rt_timeout	ctcp_lab1.c	53
+run_program	ctcp_sys_internal.c	56
+run_tests	tester-student.py	/^def run_tests(tests):$/
+rx_state	ctcp_lab2.c	68
+rx_state_t	ctcp_lab2.c	34
+saddr	ctcp_sys_internal.c	35
+saddr	ctcp_sys_internal.h	272
+sconn	ctcp_sys_internal.c	39
+seed	ctcp_sys_internal.c	59
+seggreaterments	ctcp.c	33
+seggreaterments	ctcp_lab1.c	33
+segment_corruption	tester-student.py	/^def segment_corruption():$/
+segment_delays	tester-student.py	/^def segment_delays():$/
+segment_drops	tester-student.py	/^def segment_drops():$/
+segment_duplicates	tester-student.py	/^def segment_duplicates():$/
+segment_truncated	tester-student.py	/^def segment_truncated():$/
+segments	ctcp_lab2.c	56
+segments_to_output	ctcp_lab2.c	33
+send_ack	ctcp.c	/^send_ack(ctcp_state_t *state, size_t len)$/
+send_ack	ctcp_lab1.c	/^send_ack(ctcp_state_t *state, size_t len)$/
+send_ack	ctcp_sys_internal.c	/^inline int send_ack(conn_t *dst) {$/
+send_data	ctcp.c	/^send_data(ctcp_state_t *state, char buf[], uint32_/
+send_data	ctcp_lab1.c	/^send_data(ctcp_state_t *state, char buf[], uint32_/
+send_fin	ctcp.c	/^send_fin(ctcp_state_t *state)$/
+send_fin	ctcp_lab1.c	/^send_fin(ctcp_state_t *state)$/
+send_pkt	ctcp_sys_internal.c	/^int send_pkt(conn_t *dst, int sockfd, const void */
+send_resets	ctcp_sys_internal.c	/^void *send_resets(void *args) {$/
+send_rst	ctcp_sys_internal.c	/^inline int send_rst(conn_t *dst) {$/
+send_syn	ctcp_sys_internal.c	/^inline int send_syn(conn_t *dst) {$/
+send_synack	ctcp_sys_internal.c	/^inline int send_synack(conn_t *dst) {$/
+send_tcp_conn_seg	ctcp_sys_internal.c	/^int send_tcp_conn_seg(conn_t *dst, int flags) {$/
+send_window	ctcp.h	53
+seqno	ctcp.c	46
+seqno	ctcp_lab1.c	47
+seqno	ctcp_sys.h	46
+seqno	ctcp_sys_internal.h	279
+setup_poll	ctcp_sys_internal.c	/^void setup_poll() {$/
+size	ctcp_sys_internal.h	73
+socket	ctcp_sys_internal.c	32
+src_addr	ctcp_sys_internal.h	152
+start_client	ctcp_sys_internal.c	/^int start_client(char *server, char *port) {$/
+start_client	tester-student.py	/^def start_client(server="localhost", server_port=D/
+start_server	ctcp_sys_internal.c	/^int start_server(char *port, int argc, char *argv[/
+start_server	tester-student.py	/^def start_server(port=DEFAULT_SERVER_PORT, flags=[/
+starting_time	ctcp.c	61
+starting_time	ctcp_lab1.c	61
+state	ctcp_sys_internal.h	274
+state_list	ctcp.c	60
+state_list	ctcp_lab1.c	60
+state_list	ctcp_lab2.c	75
+stdin	ctcp_sys_internal.h	283
+stdout	ctcp_sys_internal.h	284
+submit	Makefile	/^submit: clean$/
+sunaddr	ctcp_sys_internal.c	36
+sunaddr	ctcp_sys_internal.h	273
+tail	ctcp_linked_list.h	24
+tcp_handshake	ctcp_sys_internal.c	/^conn_t *tcp_handshake(void) { ASSERT_CLIENT_ONLY;$/
+tcp_hdr	ctcp_sys_internal.h	157
+tcp_len	ctcp_sys_internal.h	156
+tcp_new_connection	ctcp_sys_internal.c	/^conn_t *tcp_new_connection(char *pkt) { ASSERT_SER/
+tcp_pseudoheader	ctcp_sys_internal.h	151
+tcp_pseudoheader_t	ctcp_sys_internal.h	159
+tcphdr_t	ctcp_sys_internal.h	141
+teardown	tester-student.py	/^def teardown():$/
+test_checksum	tester-student.py	/^  def test_checksum(test_str):$/
+test_debug_on	ctcp_sys.h	135
+tester_did_unreliable	ctcp_sys_internal.c	67
+their_init_seqno	ctcp_sys_internal.h	277
+thread_main	ctcp_sys_internal.c	92
+thread_resets	ctcp_sys_internal.c	93
+timeout	tester-student.py	/^class timeout:$/
+timer	ctcp.h	56
+timestamp_of_last_send	ctcp_lab2.c	38
+tx_state	ctcp_lab2.c	67
+tx_state_t	ctcp_lab2.c	25
+unacked_segments	ctcp_lab2.c	24
+unix_socket	ctcp_sys_internal.c	53
+unreliability	tester-student.py	/^def unreliability(flag):$/
+usage	ctcp_sys_internal.c	/^static void usage(char *progname) {$/
+used	ctcp_sys_internal.h	74
+verify	tester-student.py	/^def verify():$/
+waiting_ack	ctcp.c	42
+waiting_ack	ctcp_lab1.c	42
+window	ctcp.c	45
+window	ctcp_lab1.c	45
+window	ctcp_sys.h	50
+wrapped_ctcp_segment_t	ctcp_lab2.c	40
+write_log_header	ctcp_sys_internal.h	/^void write_log_header(int file) {$/
+write_to	tester-student.py	/^def write_to(host, msg):$/
+wrote_eof	ctcp_sys_internal.h	288
+wrote_err	ctcp_sys_internal.h	289

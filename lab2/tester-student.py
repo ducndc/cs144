@@ -469,7 +469,7 @@ def large_data():
   client_port, server_port = choose_ports()
   server = start_server(port=server_port)
   client = start_client(server_port=server_port, port=client_port)
-
+ 
   write_to(client, test_str)
   time.sleep(TEST_TIMEOUT)
   result = read_from(server)
